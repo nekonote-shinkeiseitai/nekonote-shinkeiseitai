@@ -434,7 +434,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   font-size:1.1rem;
   box-shadow:0 4px 12px rgba(45,120,147,.12);
 }
-.area-list svg{width:18px;height:18px;color:var(--paw);flex-shrink:0;}
+.area-list svg{width:18px;height:18px;color:var(--sky-deep);flex-shrink:0;}
 .area-list li.area-break{flex-basis:100%;width:0;height:0;margin:0;padding:0;border:0;box-shadow:none;background:none;}
 
 /* ---------- 営業時間 ---------- */
@@ -606,7 +606,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   margin-bottom:20px;
   border-bottom:1px solid rgba(255,255,255,.3);
 }
-.footer-paw{width:34px;height:34px;color:#fff;margin-bottom:10px;}
+.footer-paw{width:34px;height:34px;color:var(--paw);margin-bottom:10px;}
 .footer-name{font-family:var(--font-mincho);font-size:1.35rem;font-weight:700;}
 .footer-sub{font-size:1.02rem;margin-bottom:20px;}
 .footer-info{text-align:center;}
