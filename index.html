@@ -9,7 +9,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%237fb8cf'%3E%3Cellipse cx='32' cy='42' rx='17' ry='13'/%3E%3Cellipse cx='14' cy='24' rx='7' ry='9' transform='rotate(-20 14 24)'/%3E%3Cellipse cx='28' cy='13' rx='7' ry='9' transform='rotate(-5 28 13)'/%3E%3Cellipse cx='42' cy='13' rx='7' ry='9' transform='rotate(8 42 13)'/%3E%3Cellipse cx='54' cy='26' rx='7' ry='9' transform='rotate(25 54 26)'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
@@ -96,36 +96,36 @@
 
   <!-- ヒーロー -->
   <section class="hero" id="home">
-    <div class="hero-sky" aria-hidden="true"></div>
     <div class="hero-content section-inner">
-      <div class="hero-grid">
-        <div class="hero-inner reveal">
-          <p class="hero-eyebrow">── 女性・子ども専門　訪問神経整体</p>
-          <h1 class="hero-title hero-title-catch">
-            やさしい刺激で、<br>
-            神経から<span class="hero-accent">整える</span>。<br>
-            <span class="hero-title-nowrap">ご自宅でうけられる</span><br>
-            整体です。
-          </h1>
-          <p class="hero-lead">お店まで行くのが大変な方、<br>行き帰りの時間を短縮したい方、<br>家を空けたくない方へ。<br>女性の施術者が、<br>やさしい神経整体でお身体に寄り添います。</p>
-          <p class="hero-area"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-paw"/></svg>対応エリア：堺市・和泉市・高石市・<br class="sp-only">泉大津市・大阪狭山市</p>
-          <div class="hero-ctas">
-            <a href="https://lin.ee/yQ2qdc0" class="btn btn-line btn-large" target="_blank" rel="noopener">
-              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-line"/></svg>
-              <span>LINEで予約する</span>
-            </a>
-            <a href="tel:07092340736" class="btn btn-tel btn-large">
-              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-phone"/></svg>
-              <span>電話で相談する</span>
-            </a>
+      <div class="hero-main">
+        <!-- スマホ・タブレット：画像1枚をそのまま表示 -->
+        <img class="hero-image reveal" src="images/トップ５.png" alt="ご自宅にお伺いします。がんばって通わなくていい整体。ご自宅で受けられるやさしい訪問整体です。女性・子ども専門。対応エリア：堺市・和泉市・高石市・泉大津市・大阪狭山市" loading="lazy">
+
+        <!-- パソコン：画像を要素ごとに切り分けて、横幅を活かして配置 -->
+        <div class="hero-pc reveal">
+          <img class="hero-pc-top" src="images/hero-top.png" alt="ご自宅にお伺いします。がんばって通わなくていい整体。ご自宅で受けられるやさしい訪問整体です。女性・子ども専門。" loading="lazy">
+          <img class="hero-pc-piece" src="images/worries-heading.png" alt="こんなお悩みはありませんか？" loading="lazy">
+          <div class="hero-pc-worries">
+            <img src="images/worry-1.png" alt="産後のケアを自宅の落ち着いた環境で受けたい" loading="lazy">
+            <img src="images/worry-2.png" alt="子連れでの通うのは大変だから、安心して受けたい" loading="lazy">
+            <img src="images/worry-3.png" alt="ご高齢の方に負担の少ない整体をケアに" loading="lazy">
+            <img src="images/worry-4.png" alt="小さな子どもや体の不調を気軽に相談したい" loading="lazy">
           </div>
+          <img class="hero-pc-piece" src="images/checklist.png" alt="ご自宅に伺うから移動の負担なし。やさしい刺激の神経整体です。女性の施術者が担当します。お電話・LINEでお気軽にご相談ください。" loading="lazy">
+          <img class="hero-pc-piece" src="images/area-banner.png" alt="対応エリア：堺市・和泉市・高石市・泉大津市・大阪狭山市" loading="lazy">
         </div>
-        <div class="hero-photo reveal" role="img" aria-label="訪問先で、やさしい刺激で施術者がお子さまに施術している様子"></div>
+
+        <div class="hero-ctas">
+          <a href="https://lin.ee/yQ2qdc0" class="btn btn-line btn-large" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-line"/></svg>
+            <span>LINEで予約する</span>
+          </a>
+          <a href="tel:07092340736" class="btn btn-tel btn-large">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-phone"/></svg>
+            <span>電話で相談する</span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="hero-scroll-hint reveal" aria-hidden="true">
-      <span></span>
-      <p>下にスクロールしてご覧ください</p>
     </div>
   </section>
 
@@ -145,34 +145,9 @@
         <li>自律神経の乱れ</li>
         <li>産後の骨盤のゆがみ</li>
         <li>動かしにくい部分がある</li>
+        <li>その他</li>
       </ul>
-      <p class="symptoms-lead reveal">一つでも当てはまる方は、お気軽にご相談ください。<br>やさしい刺激の神経整体で、根本からのケアを目指します。</p>
-    </div>
-  </section>
-
-  <!-- 選ばれる理由 -->
-  <section class="section feature-section" id="feature">
-    <div class="section-inner">
-      <p class="section-eyebrow reveal">選ばれる理由</p>
-      <h2 class="section-title reveal">猫の手が選ばれる、3つの理由</h2>
-
-      <div class="feature-grid">
-        <article class="feature-card reveal">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home"/></svg></div>
-          <h3>ご自宅までお伺いします</h3>
-          <p>お店まで行くのが大変、<br>行き帰りの時間を短縮したい、<br>家を空けたくない。<br>そんな方におすすめの<br>訪問整体です。<br>移動の負担がなく、<br>小さなお子さまとご一緒でも<br>受けていただけます。</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-heart"/></svg></div>
-          <h3>やさしい刺激の神経整体</h3>
-          <p>強い力で押したりもんだり<br>するのが苦手な方にも<br>受けていただきやすい、<br>やさしい刺激で神経に<br>アプローチする整体です。<br>お子さまにも安心して<br>ご利用いただけます。</p>
-        </article>
-        <article class="feature-card reveal">
-          <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-person"/></svg></div>
-          <h3>女性の施術者が担当</h3>
-          <p>施術を行うのは女性です。<br>女性おひとりでも、<br>お子さまと一緒でも、<br>安心してご相談いただけます。</p>
-        </article>
-      </div>
+      <p class="symptoms-lead reveal">どんなお悩みでもお気軽にご相談ください。<br>やさしい刺激の神経整体で、根本からのケアを目指します。</p>
     </div>
   </section>
 
@@ -184,7 +159,7 @@
 
       <div class="menu-flow-wrap">
         <div class="menu-photo reveal">
-          <img src="images/20260723_sejutu.jpg" alt="訪問先で、やさしい刺激でお子さまに施術している様子" loading="lazy">
+          <img src="images/202607_egao.jpg" alt="訪問先で、やさしい刺激でお子さまに施術している様子" loading="lazy">
         </div>
 
         <div class="menu-flow reveal">
@@ -196,20 +171,18 @@
         </div>
       </div>
 
+      <div class="price-campaign reveal">
+        <img class="price-campaign-img" src="images/rei3-hd.png" alt="初回お試し価格。通常価格10,000円(税込)が初回限定60%OFFで￥3,980(税込)。はじめての方向けのお試し価格です。毎月限定5名様、定員に達し次第、今月の募集は終了となります。">
+      </div>
       <div class="price-table reveal">
         <div class="price-card">
           <p class="price-label">大人</p>
           <p class="price-value"><span class="yen">￥</span>10,000<span class="unit">（税込）／ 1回</span></p>
-          <p class="price-sub">回数券 10回 85,000円（税込）</p>
+          <p class="price-sub">回数券もございます。</p>
         </div>
         <div class="price-card">
           <p class="price-label">子ども<span class="price-note">（高校生までの男女）</span></p>
           <p class="price-value"><span class="yen">￥</span>8,500<span class="unit">（税込）／ 1回</span></p>
-        </div>
-        <div class="price-card price-card-campaign">
-          <p class="price-label">初回お試し価格</p>
-          <p class="price-value"><span class="yen">￥</span>3,980<span class="unit">（税込）</span></p>
-          <p class="price-sub">はじめての方向けのお試し価格です</p>
         </div>
       </div>
       <p class="price-caution reveal">※初回お試し価格のキャンペーンは、<br>予告なく変更・終了させていただく場合がございます。</p>
