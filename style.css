@@ -385,6 +385,15 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   text-align:center;
   box-shadow:var(--shadow-soft);
 }
+.reasons-section{padding-bottom:0;}
+.reasons-img-wrap{
+  max-width:640px;
+  margin:0 auto;
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;
+}
+.reasons-img-wrap img{display:block;width:100%;}
 .price-campaign{
   max-width:480px;
   margin:0 auto 22px;
@@ -684,6 +693,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   .feature-card{width:auto;max-width:none;margin:0;}
   .price-table{grid-template-columns:repeat(2,1fr);}
   .price-campaign{max-width:608px;}
+  .reasons-img-wrap{max-width:760px;}
   .about-story .br-mobile-only{display:none;}
   :root{--header-h:92px;}
   body{padding-bottom:0;}
