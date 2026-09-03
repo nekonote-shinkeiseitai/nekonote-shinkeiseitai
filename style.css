@@ -473,24 +473,37 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
 .hours-val{color:var(--ink);font-size:1.12rem;}
 
 /* ---------- 院長紹介 ---------- */
-.about-section{background:linear-gradient(180deg,var(--sky-1),var(--paper));}
+.about-section{background:linear-gradient(180deg,var(--sky-1),var(--paper));overflow:hidden;}
 .about-inner{
   display:grid;
   grid-template-columns:1fr;
-  gap:32px;
-  align-items:center;
+  row-gap:28px;
 }
+.about-badge{
+  text-align:center;
+  margin:0;
+  font-family:var(--font-mincho);
+  font-weight:600;
+  font-size:1.02rem;
+  letter-spacing:.12em;
+  color:var(--sky-deep);
+}
+.about-title-wrap{text-align:center;}
+.about-title{font-size:clamp(1.6rem,4.5vw,2.15rem);line-height:1.4;margin:0;}
+.about-title-line{display:block;color:var(--ink);}
+.about-photo-col{display:flex;flex-direction:column;align-items:center;}
+.about-photo{width:100%;max-width:280px;}
 .about-photo img{
+  width:100%;
+  display:block;
   border-radius:var(--radius-lg);
   box-shadow:var(--shadow-soft);
-  aspect-ratio:3/4;
+  aspect-ratio:1/1;
   object-fit:cover;
   object-position:top center;
-  max-width:320px;
-  margin:0 auto;
 }
-.about-text .section-eyebrow,.about-text .section-title{text-align:left;}
-.about-text p{color:var(--ink-soft);font-size:1.12rem;}
+.about-text{display:flex;flex-direction:column;gap:20px;}
+.about-story{color:var(--ink-soft);font-size:1.08rem;line-height:1.9;margin:0;}
 
 /* ---------- ご予約 ---------- */
 /* ---------- よくある質問 ---------- */
@@ -681,7 +694,20 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
 @media (min-width:700px){
   .menu-flow-wrap{grid-template-columns:1fr 1.15fr;align-items:center;}
   .menu-total{width:calc(100% - 3cm);transform:translateX(-1cm);}
-  .about-inner{grid-template-columns:300px 1fr;}
+  .about-inner{
+    grid-template-columns:300px 1fr;
+    column-gap:44px;
+    row-gap:18px;
+    grid-template-areas:
+      "badge badge"
+      "title title"
+      "photo text";
+  }
+  .about-badge{grid-area:badge;}
+  .about-title-wrap{grid-area:title;}
+  .about-photo-col{grid-area:photo;align-items:stretch;margin-top:120px;}
+  .about-text{grid-area:text;margin-left:56px;}
+  .about-photo{max-width:280px;}
   .reserve-grid{grid-template-columns:1fr 1fr;}
   .hero-ctas{flex-direction:row;flex-wrap:wrap;justify-content:center;max-width:none;}
   .hero-ctas .btn{flex:0 0 auto;width:auto;}
@@ -694,7 +720,8 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   .price-table{grid-template-columns:repeat(2,1fr);}
   .price-campaign{max-width:608px;}
   .reasons-img-wrap{max-width:760px;}
-  .about-story .br-mobile-only{display:none;}
+  .about-inner{grid-template-columns:320px 1fr;column-gap:56px;}
+  .about-photo,.about-photo-col{max-width:320px;}
   :root{--header-h:92px;}
   body{padding-bottom:0;}
   .mobile-fixed-bar{display:none;}
