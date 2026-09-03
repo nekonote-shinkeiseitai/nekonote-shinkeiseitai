@@ -356,7 +356,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
 .menu-flow-eyebrow{
   font-size:1.02rem;
   letter-spacing:.08em;
-  color:var(--sky-deep);
+  color:var(--paw);
   font-weight:600;
   margin-bottom:14px;
 }
@@ -364,6 +364,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   font-size:clamp(1.6rem,3.2vw,2rem);
   line-height:1.5;
   margin-bottom:20px;
+  color:var(--paw-deep);
 }
 .menu-flow-text{
   font-size:1.1rem;
