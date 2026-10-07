@@ -174,7 +174,7 @@
         <div class="menu-flow reveal">
           <p class="menu-flow-eyebrow">── 神経整体とは</p>
           <h3 class="menu-flow-heading">やさしい刺激で、<br>神経にアプローチ。</h3>
-          <p class="menu-flow-text">「猫の手」の施術は、<br>強い力で筋肉をもみほぐすのではなく、<br>やさしい刺激で神経にはたらきかける<br class="sp-only">神経整体です。<br>無理な力を加えないため、<br>身体への負担が少なく、<br>女性やお子さまにも安心して<br class="sp-only">受けていただけます。</p>
+          <p class="menu-flow-text">「猫の手」の施術は、<br>強い力で筋肉をもみほぐすのではなく、<br>やさしい刺激で神経に<span class="nowrap">はたらきかける</span><br class="sp-only">神経整体です。<br>無理な力を加えないため、<br>身体への負担が少なく、<br>女性やお子さまにも安心して<br class="sp-only">受けていただけます。</p>
           <p class="menu-total"><span>カウンセリング約30分</span><span class="plus">＋</span><span>施術時間約30分</span><span class="eq">＝</span><span class="total-time">合計 約1時間</span></p>
           <p class="menu-flow-text">施術は女性の施術者が担当し、<br>じっくりお身体と向き合います。</p>
         </div>
@@ -247,7 +247,7 @@
       <h2 class="section-title reveal">訪問エリア</h2>
       <p class="area-lead reveal">下記の地域へお伺いしています。</p>
       <ul class="area-list reveal">
-        <li><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-paw"/></svg>堺市（堺区、中区、東区、西区、<br class="sp-only">南区、北区、美原区）</li>
+        <li><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-paw"/></svg>堺市（堺区、中区、東区、西区、南区、北区、美原区）</li>
         <li class="area-break" aria-hidden="true"></li>
         <li><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-paw"/></svg>和泉市</li>
         <li><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-paw"/></svg>高石市</li>
@@ -282,7 +282,7 @@
 
       <div class="about-title-wrap reveal">
         <h2 class="about-title">
-          <span class="about-title-line">『訪問神経整体猫の手』を</span>
+          <span class="about-title-line">『<span class="nowrap">訪問神経整体</span><wbr><span class="nowrap">猫の手』を</span></span>
           <span class="about-title-line">はじめた理由</span>
         </h2>
       </div>
@@ -408,5 +408,13 @@
 </div>
 
 <script src="script.js"></script>
+<!-- 日本語の文章が単語の途中で改行されないよう、文節ごとに区切る（BudouX） -->
+<script type="module">
+  import { loadDefaultJapaneseParser } from 'https://cdn.jsdelivr.net/npm/budoux@0.9.3/module/index.js';
+  const parser = loadDefaultJapaneseParser();
+  document.querySelectorAll('main p, main h2, main h3, main li, main summary, .site-footer p').forEach((el) => {
+    parser.applyToElement(el);
+  });
+</script>
 </body>
 </html>

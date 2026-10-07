@@ -40,6 +40,7 @@ body{
   color:var(--ink);
   background:var(--paper);
   line-height:1.9;
+  word-break:auto-phrase; /* 対応ブラウザでは文節で改行（BudouX が読み込めなかったときの予備） */
   -webkit-font-smoothing:antialiased;
   padding-bottom:68px; /* スマホ下部固定バーの分の余白 */
 }
@@ -217,6 +218,7 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
 }
 /* footer-area-l1,l2 はスマホでの横はみ出しを防ぐため、折り返し可能なまま（nowrap指定を削除） */
 .pc-only{display:none;}
+.nowrap{white-space:nowrap;} /* この中では改行しない */
 @media (min-width:700px){
   .pc-only{display:inline;}
 }
