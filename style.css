@@ -420,6 +420,50 @@ section[id]{scroll-margin-top:calc(var(--header-h) + 12px);}
   margin-top:22px;
 }
 
+/* ---------- モニター様の声 ---------- */
+.voice-section{background:linear-gradient(180deg,var(--sky-1),var(--paper));}
+/* 単語の途中で改行しないよう、HTML の <wbr> の位置でだけ折り返す */
+.voice-card,.voice-notes{word-break:keep-all;overflow-wrap:anywhere;}
+.voice-list{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:28px;
+}
+.voice-card{
+  background:#fff;
+  border:1px solid rgba(143,203,224,.3);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-soft);
+  overflow:hidden;
+}
+.voice-photo{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+.voice-body{padding:24px 22px 26px;}
+.voice-body p{font-size:1.05rem;color:var(--ink-soft);}
+.voice-body p:last-child{margin-bottom:0;}
+.voice-catch{
+  font-size:1.2rem;
+  line-height:1.6;
+  color:var(--paw-deep);
+  margin-bottom:6px;
+}
+.voice-body .voice-name{
+  font-weight:700;
+  color:var(--sky-deep);
+  margin-bottom:14px;
+}
+.voice-notes{
+  max-width:720px;
+  margin:28px auto 0;
+}
+.voice-notes p{font-size:.95rem;color:var(--ink-soft);margin:0 0 .3em;}
+@media (min-width:700px){
+  .voice-list{grid-template-columns:1fr 1fr;align-items:start;}
+}
+
 /* ---------- 対応エリア ---------- */
 .area-section{background:var(--sky-1);}
 .area-lead{text-align:center;color:var(--ink-soft);font-size:1.1rem;}
